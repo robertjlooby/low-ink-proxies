@@ -1,0 +1,16 @@
+{
+  "name": "low-ink-proxies",
+  "version": "1.0.0",
+  "description": "Black and white Magic: The Gathering proxies",
+  "dependencies": {
+    "image-downloader": "^3.3.0",
+    "mtgsdk": "^0.3.0",
+    "tempy": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "proxy": "node src/proxy.js"
+  },
+  "author": "Robert Looby",
+  "license": "MIT"
+}
