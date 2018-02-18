@@ -38,7 +38,7 @@ var decklistPath = process.argv[2]
 var deckName = path.basename(decklistPath, path.extname(decklistPath))
 var cardList = fs.readFileSync(decklistPath).toString().split(/\r?\n/);
 var fetches = []
-const cardRegex = /^(\d+) (.*)$/
+const cardRegex = /^(?:SB:\s+)?(\d+)(?: \[.*\])? (.*)$/
 for(i in cardList) {
     var match = cardRegex.exec(cardList[i])
     if (match) {
